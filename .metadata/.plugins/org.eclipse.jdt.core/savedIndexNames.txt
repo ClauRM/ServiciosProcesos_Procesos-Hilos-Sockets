@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\claud\OneDrive\Documentos\IMF\2 DAM\Programación Servicios y procesos\serviciosyprocesos-workspace\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3376472041.index
+1680345520.index

@@ -1,0 +1,28 @@
+//clase CrearProcesos
+public class CrearProcesos {
+
+	public void ejecutar(String ruta) {
+
+		ProcessBuilder pb; // creador del proceso
+
+		try {
+			pb = new ProcessBuilder(ruta);
+			pb.start(); // lo pone en marcha pasandole la ruta
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	//clase principal
+	public static void main(String[] args) {
+
+		String ruta = "notepad.exe";
+
+		CrearProcesos proc = new CrearProcesos();
+		proc.ejecutar(ruta);
+		System.out.println("Finalizado");
+		
+		//Al ejecutar el programa, se abre el bloc de notas
+		//El proceso sigue vivo (notepad), aunque se haya terminado el proceso padre (programa en Java que lo ha abierto).  
+	}
+} // fi classe
