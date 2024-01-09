@@ -21,6 +21,7 @@ public class TimeServer {
                PrintWriter writer = new PrintWriter(output, true);
                writer.println(new Date().toString());
            }
+           //socket.close(); //cerrar el socket
 
        } catch (IOException ex) {
            System.out.println("Server exception: " + ex.getMessage());
